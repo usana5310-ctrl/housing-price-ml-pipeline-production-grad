@@ -16,6 +16,7 @@ from src.inference_pipeline.inference import predict
 S3_BUCKET = os.getenv("S3_BUCKET", "production-housing-price-prediction-platform-data")
 REGION = os.getenv("AWS_REGION", "ap-south-1")
 
+s3 = boto3.client("s3", region_name=REGION)
 
 # Ensures your app always has the latest model/data locally, 
 # but avoids re-downloading every time it starts.
