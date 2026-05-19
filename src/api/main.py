@@ -47,7 +47,7 @@ else:
 # App
 # ----------------------------
 # Instantiates the FastAPI app.
-app = FastAPI(title="Housing Regression API")
+app = FastAPI(title="production-housing-price-prediction-platform")
 
 # / → simple landing endpoint to confirm API is alive.
 @app.get("/")
